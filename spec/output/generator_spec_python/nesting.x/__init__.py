@@ -2,8 +2,8 @@
 # DO NOT EDIT or your changes may be overwritten
 from .base import *
 from .constants import *
-from .union_key import UnionKey
-from .foo import Foo
-from .my_union_one import MyUnionOne
-from .my_union_two import MyUnionTwo
-from .my_union import MyUnion
+from .union_key import *
+from .foo import *
+from .my_union_one import *
+from .my_union_two import *
+from .my_union import *

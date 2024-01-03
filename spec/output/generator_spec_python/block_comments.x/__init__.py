@@ -2,4 +2,4 @@
 # DO NOT EDIT or your changes may be overwritten
 from .base import *
 from .constants import *
-from .account_flags import AccountFlags
+from .account_flags import *

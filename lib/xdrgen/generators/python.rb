@@ -72,7 +72,7 @@ module Xdrgen
       def render_enum(enum)
         enum_name = name enum
         enum_name_underscore = enum_name.underscore
-        @init_out.puts "from .#{enum_name_underscore} import #{enum_name}"
+        @init_out.puts "from .#{enum_name_underscore} import *"
 
         file_name = "#{enum_name_underscore}.py"
         out = @output.open(file_name)
@@ -106,7 +106,7 @@ module Xdrgen
         typedef_name = typedef.name.camelize
         typedef_name_underscore = typedef.name.underscore
 
-        @init_out.puts "from .#{typedef_name_underscore} import #{typedef_name}"
+        @init_out.puts "from .#{typedef_name_underscore} import *"
 
         file_name = "#{typedef_name_underscore}.py"
         out = @output.open(file_name)
@@ -162,7 +162,7 @@ module Xdrgen
       def render_union(union, render_import_in_func = false)
         union_name = name union
         union_name_underscore = union_name.underscore
-        @init_out.puts "from .#{union_name_underscore} import #{union_name}"
+        @init_out.puts "from .#{union_name_underscore} import *"
 
         file_name = "#{union_name_underscore}.py"
         out = @output.open(file_name)
@@ -314,7 +314,7 @@ module Xdrgen
       def render_struct(struct)
         struct_name = name struct
         struct_name_underscore = struct_name.underscore
-        @init_out.puts "from .#{struct_name_underscore} import #{struct_name}"
+        @init_out.puts "from .#{struct_name_underscore} import *"
 
         file_name = "#{struct_name_underscore}.py"
         out = @output.open(file_name)

@@ -2,5 +2,5 @@
 # DO NOT EDIT or your changes may be overwritten
 from .base import *
 from .constants import *
-from .int64 import Int64
-from .my_struct import MyStruct
+from .int64 import *
+from .my_struct import *

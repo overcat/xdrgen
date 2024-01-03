@@ -2,5 +2,5 @@
 # DO NOT EDIT or your changes may be overwritten
 from .base import *
 from .constants import *
-from .test_array import TestArray
-from .test_array2 import TestArray2
+from .test_array import *
+from .test_array2 import *
