@@ -54,5 +54,5 @@ class OptHash1:
             return NotImplemented
         return self.opt_hash1 == other.opt_hash1
 
-    def __str__(self):
+    def __repr__(self):
         return f"<OptHash1 [opt_hash1={self.opt_hash1}]>"

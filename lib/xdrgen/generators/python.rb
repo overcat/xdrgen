@@ -145,7 +145,7 @@ module Xdrgen
                     return NotImplemented
                 return self.#{typedef_name_underscore} == other.#{typedef_name_underscore}
 
-            def __str__(self):
+            def __repr__(self):
                 return f"<#{typedef_name} [#{typedef_name_underscore}={self.#{typedef_name_underscore}}]>"
           HEREDOC
         end
@@ -296,7 +296,7 @@ module Xdrgen
                 return #{attribute_names.map { |m| 'self.' + m + '== other.' + m }.join(" and ")}
           HEREDOC
 
-          out.puts "def __str__(self):"
+          out.puts "def __repr__(self):"
           out.indent(2) do
             out.puts "out = []"
             out.puts "out.append(f'#{union_discriminant_name_underscore}={self.#{union_discriminant_name_underscore}}')"
@@ -389,7 +389,7 @@ module Xdrgen
                 return #{attribute_names.map { |m| 'self.' + m + '== other.' + m }.join(" and ")}
           HEREDOC
 
-          out.puts "def __str__(self):"
+          out.puts "def __repr__(self):"
           out.indent(2) do
             out.puts "out = ["
             out.indent(2) do

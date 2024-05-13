@@ -56,5 +56,5 @@ class Arr:
             return NotImplemented
         return self.arr == other.arr
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Arr [arr={self.arr}]>"

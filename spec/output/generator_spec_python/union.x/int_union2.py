@@ -50,5 +50,5 @@ class IntUnion2:
             return NotImplemented
         return self.int_union2 == other.int_union2
 
-    def __str__(self):
+    def __repr__(self):
         return f"<IntUnion2 [int_union2={self.int_union2}]>"

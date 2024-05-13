@@ -67,7 +67,7 @@ class NesterNestedUnion:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.color== other.color and self.blah2== other.blah2
-    def __str__(self):
+    def __repr__(self):
         out = []
         out.append(f'color={self.color}')
         out.append(f'blah2={self.blah2}') if self.blah2 is not None else None

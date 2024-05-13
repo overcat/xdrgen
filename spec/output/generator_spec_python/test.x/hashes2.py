@@ -58,5 +58,5 @@ class Hashes2:
             return NotImplemented
         return self.hashes2 == other.hashes2
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Hashes2 [hashes2={self.hashes2}]>"

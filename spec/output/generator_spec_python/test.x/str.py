@@ -49,5 +49,5 @@ class Str:
             return NotImplemented
         return self.str == other.str
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Str [str={self.str}]>"
