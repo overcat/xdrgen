@@ -49,5 +49,5 @@ class Int2:
             return NotImplemented
         return self.int2 == other.int2
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Int2 [int2={self.int2}]>"

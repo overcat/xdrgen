@@ -49,5 +49,5 @@ class Error:
             return NotImplemented
         return self.error == other.error
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Error [error={self.error}]>"

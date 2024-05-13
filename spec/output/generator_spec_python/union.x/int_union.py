@@ -88,7 +88,7 @@ class IntUnion:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.type== other.type and self.error== other.error and self.things== other.things
-    def __str__(self):
+    def __repr__(self):
         out = []
         out.append(f'type={self.type}')
         out.append(f'error={self.error}') if self.error is not None else None

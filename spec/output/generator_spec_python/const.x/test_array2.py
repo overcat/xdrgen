@@ -57,5 +57,5 @@ class TestArray2:
             return NotImplemented
         return self.test_array2 == other.test_array2
 
-    def __str__(self):
+    def __repr__(self):
         return f"<TestArray2 [test_array2={self.test_array2}]>"

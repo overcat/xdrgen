@@ -55,7 +55,7 @@ class NesterNestedStruct:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.blah== other.blah
-    def __str__(self):
+    def __repr__(self):
         out = [
             f'blah={self.blah}',
         ]

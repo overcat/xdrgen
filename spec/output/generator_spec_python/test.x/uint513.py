@@ -49,5 +49,5 @@ class Uint513:
             return NotImplemented
         return self.uint513 == other.uint513
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Uint513 [uint513={self.uint513}]>"

@@ -65,7 +65,7 @@ class LotsOfMyStructs:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.members== other.members
-    def __str__(self):
+    def __repr__(self):
         out = [
             f'members={self.members}',
         ]

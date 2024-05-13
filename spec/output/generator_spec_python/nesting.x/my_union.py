@@ -93,7 +93,7 @@ class MyUnion:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.type== other.type and self.one== other.one and self.two== other.two
-    def __str__(self):
+    def __repr__(self):
         out = []
         out.append(f'type={self.type}')
         out.append(f'one={self.one}') if self.one is not None else None

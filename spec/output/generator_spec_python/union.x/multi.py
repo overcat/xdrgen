@@ -49,5 +49,5 @@ class Multi:
             return NotImplemented
         return self.multi == other.multi
 
-    def __str__(self):
+    def __repr__(self):
         return f"<Multi [multi={self.multi}]>"

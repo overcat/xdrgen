@@ -81,7 +81,7 @@ class MyStruct:
         if not isinstance(other, self.__class__):
             return NotImplemented
         return self.some_int== other.some_int and self.a_big_int== other.a_big_int and self.some_opaque== other.some_opaque and self.some_string== other.some_string and self.max_string== other.max_string
-    def __str__(self):
+    def __repr__(self):
         out = [
             f'some_int={self.some_int}',
             f'a_big_int={self.a_big_int}',
